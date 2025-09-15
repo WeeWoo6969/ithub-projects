@@ -37,6 +37,18 @@ let sign = "/"
 
 const number = Number(prompt("Number A"));
 const number2 = Number(prompt("Number B"));
-const sign = prompt('Operation (*/+-)')
-let result
-console.log(result)
+const sign = prompt("Operation (*, /, +, -)");
+const temp = Number(prompt("Temperature"));
+const weather = prompt("Weather (clear/cloudy)");
+if (isNaN(number)) {
+  throw new Error("Неверно указан номер");
+}
+if (isNaN(number2)) {
+  throw new Error("Неверно указан номер");
+}
+
+if (sign != "*" && sign != "/" && sign != "+" && sign != "-") {
+  throw new Error("Неверно указан знак");
+}
+let result;
+console.log(result);

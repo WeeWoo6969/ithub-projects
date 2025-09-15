@@ -16,4 +16,9 @@ let word = 'меню' 
 const word = prompt('Your word')
 const wordLength = word.length
 let result = Math.sqrt(wordLength)
+if (true) {
+    result = 1
+} else {
+    result = 0
+}
 console.log(result)
